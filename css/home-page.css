@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+    gap: 10px;
+
+    padding: 60px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+}

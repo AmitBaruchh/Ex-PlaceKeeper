@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Place Keeper</title>
+        <link rel="stylesheet" href="css\main.css" />
+        <link rel="stylesheet" href="css\home-page.css" />
+    </head>
+    <body onload="onInit()">
+        <header>
+            <h1>Welcome to Place Keeper!</h1>
+        </header>
+        <main>
+            <section class="welcome-message">
+                <p>Find your way back to your best places!</p>
+            </section>
+            <nav>
+                <a href="map.html">Go to Map</a>
+                <a href="user-prefs.html">User Preferences</a>
+            </nav>
+            <section class="gallery-container">
+                <img src="http://unsplash.it/350/350" alt="" />
+                <img src="http://unsplash.it/351/350" alt="" />
+                <img src="http://unsplash.it/350/351" alt="" />
+                <img src="http://unsplash.it/349/350" alt="" />
+                <img src="http://unsplash.it/350/349" alt="" />
+                <img src="http://unsplash.it/351/351" alt="" />
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Place Keeper</p>
+        </footer>
+        <script src="js\services\storage.service.js"></script>
+        <script src="js\services\user-prefs.service.js"></script>
+        <script src="js\user-prefs.controller.js"></script>
+    </body>
+</html>

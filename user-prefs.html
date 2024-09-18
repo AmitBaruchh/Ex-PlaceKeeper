@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Place Keeper</title>
+        <link rel="stylesheet" href="css\main.css" />
+        <link rel="stylesheet" href="css\user-prefs.css" />
+    </head>
+    <body onload="onInit()">
+        <header>
+            <h1>Welcome to Place Keeper!</h1>
+        </header>
+        <main>
+            <p>Fill in your personal details below.</p>
+            <nav>
+                <a href="index.html">Go to Home Page</a>
+                <a href="map.html">Go to Map</a>
+            </nav>
+            <form id="frmRegister" onsubmit="onSubmit(event)">
+                <table>
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input required type="email" name="email" id="email" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age:</label></td>
+                        <td>
+                            <input
+                                type="range"
+                                id="age"
+                                name="age"
+                                step="1"
+                                min="18"
+                                max="120"
+                                value="25"
+                                oninput="showAge(this.value)"
+                            />
+                            <span id="sAge">25</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Text color:</td>
+                        <td>
+                            <input type="color" id="txtColor" name="txtColor" form="frmRegister" value="#6d6c6c" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Background color:</td>
+                        <td>
+                            <input type="color" id="bgnColor" name="bgnColor" form="frmRegister" value="#00796b" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Birth Date:</label></td>
+                        <td>
+                            <input value="2024-01-01" type="date" id="dob" name="dob" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="tob">Birth Time:</label></td>
+                        <td>
+                            <input value="00:00" type="time" id="tob" name="tob" />
+                        </td>
+                    </tr>
+
+                    <br />
+                </table>
+                <button class="register-btn">Register</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; Place Keeper</p>
+        </footer>
+        <script src="js\services\storage.service.js"></script>
+        <script src="js\services\user-prefs.service.js"></script>
+        <script src="js\user-prefs.controller.js"></script>
+    </body>
+</html>

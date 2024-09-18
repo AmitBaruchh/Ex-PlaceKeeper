@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 0.5em;
+}
+
+button {
+    display: block;
+    margin-block-start: 2em;
+    width: 100%;
+    padding: 0.75em;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* button:hover {
+    background-color: var(--primary-color);
+} */

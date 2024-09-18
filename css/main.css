@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #e9f5f9;
+    --default-text-color: #333;
+    --primary-color: #00796b;
+    --highlight-text-color: white;
+    --footer-bg-color: #333;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--highlight-text-color);
+    padding: 1em;
+    min-height: 8vh;
+}
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--default-text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* min-height: 100vh; */
+}
+
+main {
+    min-height: 70vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--default-text-color);
+
+    padding: 0.5em 1em;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--highlight-text-color);
+}
+
+footer {
+    padding: 1em;
+    background-color: var(--footer-bg-color);
+    color: var(--highlight-text-color);
+    margin-block-end: auto;
+    min-height: 1vh;
+}
