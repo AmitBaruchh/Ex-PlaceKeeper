@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.map {
+    margin: 20px 0;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+table {
+    width: 200px;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+table,
+th,
+td {
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+}
+
+.places-list div {
+    margin: 10px 0;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: 2px solid var(--primary-color);
+    background-color: #fff;
+    color: var(--default-text-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.download-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: var(--default-text-color);
+    color: #fff;
+}

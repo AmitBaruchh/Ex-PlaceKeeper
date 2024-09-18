@@ -33,6 +33,7 @@ button {
     cursor: pointer;
 }
 
-/* button:hover {
-    background-color: var(--primary-color);
-} */
+button:hover {
+    background-color: var(--default-text-color);
+    color: #fff;
+}
